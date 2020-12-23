@@ -13,7 +13,7 @@ const BookContainer = ({numOfBooks, buyBook}) => {
 
 const mapStateToProps = (state) => {
   return {
-    numOfBooks: state.numOfBooks,
+    numOfBooks: state.book.numOfBooks,
   };
 };
 
