@@ -11,8 +11,6 @@ const BookContainer = ({numOfBooks, buyBook}) => {
   );
 };
 
-export default BookContainer;
-
 const mapStateToProps = (state) => {
   return {
     numOfBooks: state.numOfBooks,

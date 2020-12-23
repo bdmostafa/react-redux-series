@@ -1,7 +1,7 @@
 import { BUY_BOOK } from './bookTypes'
 
 const initialState = {
-    numOfBooks = 10
+    numOfBooks: 10
 }
 
 const bookReducer = (state = initialState, action) => {
