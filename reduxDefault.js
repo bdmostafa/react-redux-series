@@ -5,9 +5,11 @@ const combineReducers = redux.combineReducers;
 const applyMiddleware = redux.applyMiddleware;
 const logger = reduxLogger.createLogger();
 
+// Types
 const BUY_BOOK = "BUY_BOOK";
 const BUY_PEN = "BUY_PEN";
 
+// Actions
 function buyBook() {
   return {
     type: BUY_BOOK,
@@ -21,6 +23,7 @@ function buyPen() {
   };
 }
 
+// States
 const initialBookState = {
   numOfBooks: 10,
 };
@@ -29,6 +32,7 @@ const initialPenState = {
   numOfPens: 5,
 };
 
+// Reducers
 const bookReducer = (state = initialBookState, action) => {
   switch (action.type) {
     case BUY_BOOK:
