@@ -5,6 +5,7 @@ import HooksBookContainer from "./components/HooksBookContainer";
 import ItemContainer from "./components/ItemContainer";
 import NewBookContainer from "./components/NewBookContainer";
 import PenContainer from "./components/PenContainer";
+import UserContainer from "./components/UserContainer";
 import store from "./redux/store";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <NewBookContainer />
         <ItemContainer book />
         <ItemContainer />
+        <UserContainer />
       </div>
     </Provider>
   );
